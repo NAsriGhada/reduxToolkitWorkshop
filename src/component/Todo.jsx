@@ -7,14 +7,14 @@ const Todo = ({ el }) => {
   const [input, setInput] = useState(el.payload);
   // const [num, setNum] = useState(el.id);
   const dispatch = useDispatch();
-  
+
   const handleEdit = (e) => {
     e.preventDefault();
     dispatch(editTask({ id: el.id, text: input }));
     setIsEditing(false);
     console.log("Task edited");
   };
-  console.log(handleEdit)
+  console.log(handleEdit);
 
   const handleDone = () => {
     dispatch(toggleDone({ id: el.id }));
