@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../redux/TodoSlice";
-import './todo.css'
+import './addTodo.css'
 
 
 const AddTodo = () => {
